@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dry Streak Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Dry Streak Calculator</h1>
+        <p class="subtitle">Calculate how unlucky your dry streak really is</p>
+        
+        <div class="form">
+            <div class="input-group">
+                <label for="dropRate">Drop Rate (1 in X)</label>
+                <input type="number" id="dropRate" placeholder="e.g. 3000" min="1">
+                <span class="error-message" id="dropRateError"></span>
+            </div>
+            
+            <div class="input-group">
+                <label for="attempts">Number of Attempts</label>
+                <input type="number" id="attempts" placeholder="e.g. 5000" min="1">
+                <span class="error-message" id="attemptsError"></span>
+            </div>
+            
+            <div class="input-group">
+                <label for="dropsObtained">Drops Obtained (optional)</label>
+                <input type="number" id="dropsObtained" placeholder="e.g. 1" min="0">
+                <span class="error-message" id="dropsError"></span>
+            </div>
+            
+            <button id="calculateBtn">Calculate</button>
+        </div>
+        
+        <div class="results" id="results"></div>
+        
+        <a href="araxxor.html" class="nav-link">Araxxor Pet Calculator &rarr;</a>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

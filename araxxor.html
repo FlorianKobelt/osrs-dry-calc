@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Araxxor Pet Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <a href="index.html" class="back-link">&larr; Back to Home</a>
+        
+        <h1>Araxxor Pet Calculator</h1>
+        <p class="subtitle">Calculate your dry streak for the Araxxor Pet</p>
+        
+        <div class="form">
+            <div class="input-group">
+                <label for="searchAttempts">Search Attempts (1/3000)</label>
+                <input type="number" id="searchAttempts" placeholder="e.g. 700" min="0">
+                <span class="error-message" id="searchError"></span>
+            </div>
+            
+            <div class="input-group">
+                <label for="destroyAttempts">Destroy Attempts (1/1500)</label>
+                <input type="number" id="destroyAttempts" placeholder="e.g. 2000" min="0">
+                <span class="error-message" id="destroyError"></span>
+            </div>
+            
+            <button id="calculateBtn">Calculate</button>
+        </div>
+        
+        <div class="results" id="results"></div>
+    </main>
+    
+    <script src="araxxor.js"></script>
+</body>
+</html>
